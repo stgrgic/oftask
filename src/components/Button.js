@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-	background-color: #18ccd8;
+	background-color: ${(props) => props.theme.colors.primary};
 	cursor: pointer;
 	border: none;
 	padding: 10px;
 	&:hover,
 	&:active {
-		background-color: #00aab6;
+		background-color: ${(props) => props.theme.colors.primaryHover};
 	}
 `
 

@@ -1,10 +1,11 @@
 import Button from '../components/Button'
 import React from 'react'
+import { ThemeProvider } from '../components/ThemeProvider'
 
 // markup
 const IndexPage = () => {
 	return (
-		<>
+		<ThemeProvider>
 			<nav>
 				logo
 				<ul>
@@ -26,7 +27,7 @@ const IndexPage = () => {
 				<h2>We’ve funded 100s of brands like yours</h2>
 				{/* TODO Logos */}
 			</main>
-		</>
+		</ThemeProvider>
 	)
 }
 
