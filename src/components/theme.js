@@ -5,6 +5,7 @@ export const theme = {
 		primary: '#18CCD8',
 		primaryHover: '#00aab6',
 		text: '#052240',
+		background: '#fff',
 	},
 	space: [
 		0,
@@ -18,7 +19,7 @@ export const theme = {
 		'16rem', // 256px
 	],
 	fonts: {
-		main: 'Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif',
+		body: 'Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif',
 	},
 	fontSizes: {
 		xl: '4rem',

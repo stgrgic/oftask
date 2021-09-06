@@ -7,9 +7,20 @@ import styled from 'styled-components'
 const defaultStyles = {
 	cursor: 'pointer',
 	border: 'none',
-	padding: '10px',
 	marginBottom: '0.5em',
 	fontWeight: 'bold',
+	textDecoration: 'none',
+	fontFamily: 'body',
+	display: 'inline-flex',
+	alignItems: 'center',
+	justifyContent: 'center',
+	margin: 0,
+	color: 'text',
+	fontSize: 'm',
+	borderRadius: '53px',
+	height: '54px',
+	paddingLeft: '2rem',
+	paddingRight: '2rem',
 }
 
 const variants = variant({
@@ -17,10 +28,14 @@ const variants = variant({
 		primary: {
 			...defaultStyles,
 			backgroundColor: 'primary',
+			border: '1px solid',
+			borderColor: 'primary',
 		},
 		secondary: {
 			...defaultStyles,
-			backgroundColor: 'secondary',
+			backgroundColor: 'background',
+			border: '1px solid',
+			borderColor: 'text',
 		},
 	},
 })
