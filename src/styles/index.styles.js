@@ -34,7 +34,6 @@ export const StyledHero = styled.header`
 		}
 	}
 	.heroImage {
-		background-color: #ffa;
 		position: absolute;
 		right: 0;
 		top: 100px;
