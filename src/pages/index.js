@@ -1,4 +1,5 @@
-import Button from '../components/Button'
+import { Button, GlobalStyle, Nav } from '../components'
+
 import React from 'react'
 import { ThemeProvider } from '../components/ThemeProvider'
 
@@ -6,14 +7,8 @@ import { ThemeProvider } from '../components/ThemeProvider'
 const IndexPage = () => {
 	return (
 		<ThemeProvider>
-			<nav>
-				logo
-				<ul>
-					<li>About</li>
-					<li>Success Stories</li>
-					<li>FAQs</li>
-				</ul>
-			</nav>
+			<GlobalStyle />
+			<Nav />
 			<main>
 				<h1>Growth Capital ‍For Founders Like You</h1>
 				<p>

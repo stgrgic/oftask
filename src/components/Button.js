@@ -21,21 +21,31 @@ const defaultStyles = {
 	height: '54px',
 	paddingLeft: '2rem',
 	paddingRight: '2rem',
+	transition: 'all .1s ease',
 }
 
 const variants = variant({
 	variants: {
 		primary: {
 			...defaultStyles,
+			color: 'background',
 			backgroundColor: 'primary',
 			border: '1px solid',
 			borderColor: 'primary',
+			'&:hover, &:active': {
+				backgroundColor: 'primaryHover',
+				borderColor: 'primaryHover',
+			},
 		},
 		secondary: {
 			...defaultStyles,
 			backgroundColor: 'background',
 			border: '1px solid',
 			borderColor: 'text',
+			'&:hover, &:active': {
+				backgroundColor: 'text',
+				color: 'background',
+			},
 		},
 	},
 })
