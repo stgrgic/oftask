@@ -45,8 +45,18 @@ const Logo = () => (
 const StyledNav = styled.nav`
 	background-color: ${(props) => props.theme.colors.background};
 	display: flex;
-	height: 124px;
+	padding-top: 20px;
+	height: 80px;
 	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	@media only screen and (min-width: 900px) {
+		height: 124px;
+		flex-direction: row;
+		justify-content: flex-start;
+
+		padding-top: 0;
+	}
 
 	${Logo} {
 		flex-shrink: 0;
@@ -59,13 +69,18 @@ const StyledNav = styled.nav`
 		padding: 0;
 		align-items: flex-end;
 		line-height: 1;
-		margin-left: ${(props) => props.theme.space[6]};
+
+		@media only screen and (min-width: 900px) {
+			margin-left: ${(props) => props.theme.space[6]};
+		}
 		li {
 			margin: 0;
 			padding: 0;
 			line-height: 1;
-			margin-left: ${(props) => props.theme.space[5]};
 			white-space: nowrap;
+			&:not(:first-child) {
+				margin-left: ${(props) => props.theme.space[5]};
+			}
 		}
 	}
 `

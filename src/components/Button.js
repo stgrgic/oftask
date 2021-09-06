@@ -16,7 +16,7 @@ const defaultStyles = {
 	justifyContent: 'center',
 	margin: 0,
 	color: 'text',
-	fontSize: 'm',
+	fontSize: 3,
 	borderRadius: '53px',
 	height: '54px',
 	paddingLeft: '2rem',
@@ -46,6 +46,7 @@ const variants = variant({
 			svg: {
 				fill: 'text',
 				marginRight: 3,
+				transition: 'all .1s ease',
 			},
 			'&:hover, &:active': {
 				backgroundColor: 'text',
