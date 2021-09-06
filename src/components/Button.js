@@ -42,9 +42,17 @@ const variants = variant({
 			backgroundColor: 'background',
 			border: '1px solid',
 			borderColor: 'text',
+			color: 'text',
+			svg: {
+				fill: 'text',
+				marginRight: 3,
+			},
 			'&:hover, &:active': {
 				backgroundColor: 'text',
 				color: 'background',
+				svg: {
+					fill: 'background',
+				},
 			},
 		},
 	},
@@ -65,7 +73,7 @@ const Button = React.forwardRef(({ children, ...props }, ref) => {
 
 Button.propTypes = {
 	variant: propTypes.oneOf(['primary', 'secondary']).isRequired,
-	children: propTypes.string.isRequired,
+	children: propTypes.node.isRequired,
 }
 
 export default Button

@@ -14,7 +14,7 @@ export const theme = {
 		'0.5rem', // 8px
 		'1rem', // 16px
 		'2rem', // 32px
-		'3rem', // 32px
+		'3rem', // 48px
 		'4rem', // 64px
 		'8rem', // 128px
 		'16rem', // 256px
@@ -22,13 +22,18 @@ export const theme = {
 	fonts: {
 		body: 'Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif',
 	},
-	fontSizes: {
-		xl: '4rem',
-		l: '2rem',
-		m: '1rem',
-		s: '0.9rem',
-		xs: '0.75rem',
-	},
+	fontSizes: [
+		0,
+		'0.5rem', // 8px
+		'1rem', // 16px
+		'1.125rem', // 18px
+		'2rem', // 32px
+		'3rem', // 48px
+		'4rem', // 64px
+		'8rem', // 128px
+		'16rem', // 256px
+	],
+
 	fontWeights: {
 		regular: 400,
 		medium: 500,

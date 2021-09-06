@@ -1,29 +1,41 @@
-import { Button, GlobalStyle, Nav } from '../components'
+import { Button, Container, GlobalStyle, Link, Nav } from '../components'
+import { StyledActions, StyledHero } from '../styles/index.styles'
 
+import { PlayIcon } from '../components/icons'
 import React from 'react'
 import { ThemeProvider } from '../components/ThemeProvider'
 
-// markup
 const IndexPage = () => {
 	return (
 		<ThemeProvider>
 			<GlobalStyle />
-			<Nav />
-			<main>
-				<h1>Growth Capital ‍For Founders Like You</h1>
-				<p>
-					Supercharged funding from £10K to £2M for your marketing & inventory
-					purchases.
-				</p>
-				<Button as="a" href="/" variant="primary">
-					Get funded
-				</Button>
-				<Button variant="secondary">How it works</Button>
-				<p>Already have an account? Log in</p>
-				{/* TODO image */}
-				<h2>We’ve funded 100s of brands like yours</h2>
-				{/* TODO Logos */}
-			</main>
+			<Container>
+				<Nav />
+				<main>
+					<StyledHero>
+						<h1>Growth Capital ‍For Founders Like You</h1>
+						<p className="subheading">
+							Supercharged funding from <strong>£10K to £2M</strong> for your{' '}
+							<strong>marketing & inventory purchases</strong>.
+						</p>
+						<StyledActions>
+							<Button as="a" href="/" variant="primary" mr={4}>
+								Get funded
+							</Button>
+							<Button variant="secondary">
+								<PlayIcon /> How it works
+							</Button>
+						</StyledActions>
+						<p>
+							Already have an account? <Link to="/">Log in</Link>
+						</p>
+					</StyledHero>
+
+					{/* TODO image */}
+					<h2>We’ve funded 100s of brands like yours</h2>
+					{/* TODO Logos */}
+				</main>
+			</Container>
 		</ThemeProvider>
 	)
 }
